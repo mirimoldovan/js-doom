@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calculator</title>
+    <meta name="description" content="Tip Calculator">
+    <link rel="stylesheet" href="./proba.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="app-wrapper">
+        <div id="app-header">
+          <h1>Tip Calculator</h1>
+        </div>
+        <div id="app-body">
+          <p class="body-text" id="cost"><b>The Total bill ammount:</b></p><br/>
+
+          <input type="text" id="input-cost" step="0.01" min="0.01"><br/>
+
+          <p class="body-text" id="service"><b>The Servicelevel:</b></p><br/>
+          <div id="serviceLevel">
+            <label for="0">Never coming back - 0%</label><input type="radio" name="service" value="0"><br/>
+            <label for="1"> Bad - 10%</label><input type="radio" name="service" value="1"><br/>
+            <label for="2">OKish-15%</label><input type="radio" name="service" value="2" checked><br/>
+            <label for="3">Good-20%</label><input type="radio" name="service" value="3"><br/>
+            <label for="4">Outstanding-30%</label><input type="radio" name="service" value="4"><br/>
+          </div>
+          <br>
+
+          <b class="body-text" id="split"><b>The number of persons that are splitting the bill:</b></p><br/>
+
+          <form>
+            <select id="billSplit">
+              <option value="">--Please choose an option--</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </form>
+<button id="calculate" onclick="tipCalc()">Calculate!</button>
+
+          <p id="output"></p>
+          <p id="share"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./proba.js"></script>
+  </body>
+
+  </html>
